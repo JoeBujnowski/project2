@@ -16,13 +16,22 @@ app.use(logger('dev'));
 app.use('/', landingRoute);
 app.use('/main', mainRoute);
 
+
+// page 1
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+
+// page 2
 app.get('/main', (req, res) => {
-  res.render('main')
+  res.render('main');
 });
 
+
+
+
+
+// keep at bottem of page
 app.listen(port, () => console.log('Server is up and running', 3000));
 
