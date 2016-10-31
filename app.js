@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views','views');
 
 app.use(logger('dev'));
+app.use(express.static(__dirname + '/public'));
 
 app.use('/', landingRoute);
 app.use('/main', mainRoute);
